@@ -1,2 +1,2 @@
-# Makeshift Mask Safety Simulation
+# Makeshift Mask Viral Safety Simulation
 Fabric Mask Simulation
