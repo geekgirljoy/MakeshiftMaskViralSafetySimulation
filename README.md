@@ -9,7 +9,7 @@
 ## Sizes:
 According to this wiki article: [Coronavirus]( https://en.wikipedia.org/wiki/Coronavirus): "The diameter of the virus particles is around 120 nm." (0.12 microns)
 
-1 pixel = 1 micron (1/1000000 meters) which is the "base unit" of mesure used in this simulation - meaning that up to  (1 / 0.12 = 8.33) viral particles can fit in each 1 pixel red dot without respect to a Z (depth) dimention.
+1 pixel = 1 micron (1/1000000 meters) which is the "base unit" of mesure used in this simulation - meaning that up to  (1 / ~0.12 = ~8.33 * ~8.33 * ~8.33 = ~578.009537)  viral particles can fit in each 1 pixel red dot.
 
 The largest unit used is 1".
 
