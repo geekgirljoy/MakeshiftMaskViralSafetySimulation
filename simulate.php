@@ -201,7 +201,7 @@ function ConvertTexToMicron($tex, $fiber_density_grams_per_millileter){
 // Marsaglia polar method for generating gaussian distribution
 // based on example C++ code available on wikipedia
 // https://en.wikipedia.org/wiki/Marsaglia_polar_method
-function generateGaussian($min, $max, $standard_deviation){
+function GenerateGaussian($min, $max, $standard_deviation){
   do {
     $u = (float)mt_rand() / (float)mt_getrandmax() * 2 - 1;
     $v = (float)mt_rand() / (float)mt_getrandmax() * 2 - 1;
@@ -382,8 +382,8 @@ $total_number_of_virus_particles = 0;
 for($i = 0; $i < $number_of_droplets; $i++){
   
   // X & Y positions are a normal gaussian distribution
-  $x = generateGaussian(0, $simulation_size, $sneeze_spread);
-  $y = generateGaussian(0, $simulation_size, $sneeze_spread);  
+  $x = GenerateGaussian(0, $simulation_size, $sneeze_spread);
+  $y = GenerateGaussian(0, $simulation_size, $sneeze_spread);  
   
   $droplet_size = mt_rand(1, 100); // Roll D100 
   
