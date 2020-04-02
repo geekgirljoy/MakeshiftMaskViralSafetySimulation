@@ -399,7 +399,7 @@ for($i = 0; $i < $number_of_droplets; $i++){
 	
   if($number_of_virus_particles <= ($percentage_of_virus_in_particles * 100)){
     // Distribute virus particles into droplets
-    $number_of_virus_particles = round(($droplet_size / $virus_size_microns) * $percentage_of_virus_in_particles);
+    $number_of_virus_particles = round(pow($droplet_size / $virus_size_microns, 3 ) * $percentage_of_virus_in_particles);
   }
   else{
     $number_of_virus_particles = 0;
