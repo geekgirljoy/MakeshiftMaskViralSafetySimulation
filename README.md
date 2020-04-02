@@ -20,7 +20,7 @@ For reference, human hair is between 15 to 180 microns.
 ![Size Reference Example3](https://raw.githubusercontent.com/geekgirljoy/MakeshiftMaskViralSafetySimulation/master/SizeReferenceExample3.png)
 
 ![Size Reference Example](https://raw.githubusercontent.com/geekgirljoy/MakeshiftMaskViralSafetySimulation/master/SizeReferenceExample.png)
-
+According to a google search, a penny is ~19,053 microns in diameter.
 
 ## Example Fabric Mask Simulations:
 
