@@ -16,6 +16,11 @@ The largest unit used is 1".
 1 micron is about ~0.0000393701 inches (smaller than you can see) for reference, human hair is between 15 to 180 microns.
 
 
+![Size Reference Example2](https://raw.githubusercontent.com/geekgirljoy/MakeshiftMaskViralSafetySimulation/master/SizeReferenceExample2.png)
+
+
+
+
 ![Size Reference Example](https://raw.githubusercontent.com/geekgirljoy/MakeshiftMaskViralSafetySimulation/master/SizeReferenceExample.png)
 
 
