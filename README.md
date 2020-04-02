@@ -23,6 +23,9 @@ For reference, human hair is between 15 to 180 microns.
 
 
 ## Example Fabric Mask Simulations:
+
+Dropplet size resolution between 1 to 10 pixel/microns.
+
 * T-Shirt Example 60 thread count 30 denier
 ![T-Shirt Example](https://raw.githubusercontent.com/geekgirljoy/MakeshiftMaskViralSafetySimulation/master/t-shirt-result.png)
 
