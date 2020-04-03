@@ -2,8 +2,8 @@
 
 ## Colors:
 * Blue = Fabric/Thread
-* Green = Mucus without Viral particles
-* Red = Mucus **with** Viral particles
+* Green = Mucus without viral particles
+* Red = Mucus **with** viral particles
 
 
 ## Sizes:
