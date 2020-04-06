@@ -130,7 +130,7 @@ $minimum_droplets_per_liter = 8500; // 8500 droplets * 6 liters of air = 51000 t
 $maximum_droplets_per_liter = 15000; // 15000 droplets * 6 liters of air = 90000 total droplets in sneeze
 
 
-// sneeze spread as sneeze spread a standard_deviation
+// Sneeze spread as a standard_deviation
 // https://en.wikipedia.org/wiki/Standard_deviation
 $sneeze_spread  = 500;
 
@@ -155,9 +155,9 @@ $percentage_of_virus_in_particles = 0.50; // 50%
 // Virus Characteristics         //
 ///////////////////////////////////
 
-// size
+// Virus size
 // According to this wiki article:  https://en.wikipedia.org/wiki/Coronavirus
-//  The diameter of the virus particles is around 120 nm. (0.12 Microns)
+// The diameter of the virus particles is around 120 nm. (0.12 Microns)
 $virus_size_microns = 0.12;
 
 
@@ -251,6 +251,14 @@ elseif($fabric_simulation_method == USE_THREAD_COUNT){
   $fabric_mesh_size_microns = round(25400 / $fabric_mesh_size_microns_or_thread_count) / 2;
   
 }
+
+
+// Compute the ratio between cover (thread) and uncovered (mesh)
+do{
+  @$scale_factor+=1;
+  $fabric_thread_ratio = ($fabric_thread_size_microns / $fabric_mesh_size_microns) * $scale_factor;
+  $fabric_mesh_ratio = ($fabric_mesh_size_microns / $fabric_thread_size_microns) * $scale_factor;
+}while ($fabric_thread_ratio < 1 || $fabric_mesh_ratio < 1);
 
 
 // Decide how many droplets for the sneeze and 
@@ -396,7 +404,7 @@ for($i = 0; $i < $number_of_droplets; $i++){
   }
   
   $number_of_virus_particles = mt_rand(1, 100); // Roll D100
-	
+    
   if($number_of_virus_particles <= ($percentage_of_virus_in_particles * 100)){
     // Distribute virus particles into droplets
     $number_of_virus_particles = round(pow($droplet_size / $virus_size_microns, 3 ) * $percentage_of_virus_in_particles);
@@ -434,14 +442,14 @@ foreach($fabric as $x=>$data){
 foreach($droplets as $size=>$droplets){
   foreach($droplets as $droplet){
      
-	$color = $mucus_color;
-	   
+    $color = $mucus_color;
+       
     // Droplet Contanins Virus Particles + mucus
     if($droplet['virus'] > 0){
       $color = $virus_color;
     }
 
-	imagefilledellipse($img , $droplet['x'], $droplet['y'], $size, $size, $color);
+    imagefilledellipse($img , $droplet['x'], $droplet['y'], $size, $size, $color);
   }
 }
 echo " done!" . PHP_EOL;
@@ -463,6 +471,9 @@ echo " done!" . PHP_EOL;
 
 echo "Generating Report...";
 
+
+
+
 $report = "Simulation Characteristics:\n";
 $report .= "Simulation Square Size (Inches): $simulation_square_size_inches\n";
 $report .= "Simulation Height & Width (Pixels/Microns): $simulation_size\n";
@@ -470,6 +481,7 @@ $report .= "Simulation Area (Pixels/Microns): " . ($simulation_size * $simulatio
 $report .= "\n";
 
 $report .= "Fabric Characteristics:\n";
+
 $report .= "Fabric Simulation Method:";
 
 if($fabric_simulation_method == USE_MESH_SIEVE_MICRON){
@@ -495,6 +507,8 @@ elseif($thread_thickness_method == USE_THREAD_SIZE_TEX){
   $report .= "Thread Size (Tex): $thread_size_micron_denier_tex\n";
   $report .= "Fiber Density (g/mL): $fiber_density_grams_per_millileter\n";
 }
+$report .= "Coverage Ratio (Thread to Mesh Sieve): " . round($fabric_thread_ratio) . " : " . round($fabric_mesh_ratio) . "\n";
+$report .= "Note: A higher thread to lower mesh ratio is preferable because it means the fabric provides better filtration.\n";
 $report .= "\n";
 $report .= "Sneeze Characteristics:\n";
 $report .= "Lung Volume (Liters): $lung_volume_Liters\n";
