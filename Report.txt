@@ -9,6 +9,8 @@ Thread Count: 60
 Thread thickness method:Denier
 Thread Size (Denier): 30
 Fiber Density (g/mL): 1.5
+Coverage Ratio (Thread to Mesh Sieve): 1 : 16
+Note: A higher thread to lower mesh ratio is preferable because it means the fabric provides better filtration.
 
 Sneeze Characteristics:
 Lung Volume (Liters): 6
@@ -23,6 +25,6 @@ Percentage of Virus in Particles:  50%
 
 Virus Characteristics:
 Virus Size (Microns): 0.12
-Total Number of Virus Particles: 70826
+Total Number of Virus Particles: 364910245
 Number of Virus Particles Contained: Unimplemented
 Number of Virus Particles Leaked: Unimplemented
