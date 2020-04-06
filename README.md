@@ -29,6 +29,125 @@ Dropplet size resolution between 1 to 10 pixel/microns.
 * T-Shirt Example 60 thread count 30 denier
 ![T-Shirt Example](https://raw.githubusercontent.com/geekgirljoy/MakeshiftMaskViralSafetySimulation/master/t-shirt-result.png)
 
+## Report: 
+
+### Simulation Characteristics:
+
+**Simulation Square Size (Inches):** 0.1
+
+**Simulation Height & Width (Pixels/Microns):** 2540
+
+**Simulation Area (Pixels/Microns):** 6451600
+
+
+### Fabric Characteristics:
+
+**Fabric Simulation Method:** Thread Count
+
+**Thread Count:** 60
+
+**Thread thickness method:** Denier
+
+**Thread Size (Denier):** 30
+
+**Fiber Density (g/mL):** 1.5
+
+**Coverage Ratio (Thread to Mesh Sieve):** 1 : 16
+
+**Note:** *A higher thread to lower mesh ratio is preferable because it means the fabric provides better filtration.*
+
+
+### Sneeze Characteristics:
+
+**Lung Volume (Liters):** 6
+
+**Minimum Droplets (Per Liter):** 8500
+
+**Maximum Droplets (Per Liter):** 15000
+
+**Sneeze Spread (Standard Deviation):** 500
+
+**Respirable Aerosol Droplet Minimum Size (Microns):** 0.5
+
+**Respirable Aerosol Droplet Maximum Size (Microns):** 5
+
+**Maximum Droplet Size (Microns):** 10
+
+**Percentage of Respirable Droplets:** 33%
+
+**Percentage of Virus in Particles:**  50%
+
+
+### Virus Characteristics:
+
+**Virus Size (Microns):** 0.12
+
+**Total Number of Virus Particles:** 364910245
+
+**Number of Virus Particles Contained:** Unimplemented
+
+**Number of Virus Particles Leaked:** Unimplemented
+
+
 
 * Dress Shirt Example 120 thread count 30 denier
 ![Dress-Shirt Example](https://raw.githubusercontent.com/geekgirljoy/MakeshiftMaskViralSafetySimulation/master/dress-shirt-result.png)
+
+## Report
+
+### Simulation Characteristics:
+
+**Simulation Square Size (Inches):** 0.1
+
+**Simulation Height & Width (Pixels/Microns):** 2540
+
+**Simulation Area (Pixels/Microns):** 6451600
+
+
+### Fabric Characteristics:
+
+**Fabric Simulation Method:** Thread Count
+
+**Thread Count:** 120
+
+**Thread thickness method:** Denier
+
+**Thread Size (Denier):** 30
+
+**Fiber Density (g/mL):** 1.5
+
+**Coverage Ratio (Thread to Mesh Sieve):** 1 : 4
+
+**Note:** *A higher thread to lower mesh ratio is preferable because it means the fabric provides better filtration.*
+
+
+### Sneeze Characteristics:
+
+**Lung Volume (Liters):** 6
+
+**Minimum Droplets (Per Liter):** 8500
+
+**Maximum Droplets (Per Liter):** 15000
+
+**Sneeze Spread (Standard Deviation):** 500
+
+**Respirable Aerosol Droplet Minimum Size (Microns):** 0.5
+
+**Respirable Aerosol Droplet Maximum Size (Microns):** 5
+
+**Maximum Droplet Size (Microns):** 10
+
+**Percentage of Respirable Droplets:** 33%
+
+**Percentage of Virus in Particles:** 50%
+
+
+### Virus Characteristics:
+
+**Virus Size (Microns):** 0.12
+
+**Total Number of Virus Particles:** 363860734
+
+**Number of Virus Particles Contained:** Unimplemented
+
+**Number of Virus Particles Leaked:** Unimplemented
