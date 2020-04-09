@@ -108,7 +108,7 @@ $fiber_density_grams_per_millileter = 1.5; // only necessary if using denier or 
 
 
 ///////////////////////////////////
-// Sneeze Caracteristics         //
+// Sneeze Characteristics        //
 ///////////////////////////////////
 
 // Per this wiki article: https://en.wikipedia.org/wiki/Lung_volumes
