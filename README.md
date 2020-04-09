@@ -24,7 +24,7 @@ According to a google search, a penny is ~19,053 microns in diameter.
 
 ## Example Fabric Mask Simulations:
 
-Dropplet size resolution between 1 to 10 pixel/microns.
+Droplet size resolution between 1 to 10 pixel/microns.
 
 * T-Shirt Example 60 thread count 30 denier
 ![T-Shirt Example](https://raw.githubusercontent.com/geekgirljoy/MakeshiftMaskViralSafetySimulation/master/t-shirt-result.png)
